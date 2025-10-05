@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: infely                             # new entry fore the nice view battery widget
+      url-base: https://github.com/infely 
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -9,6 +11,9 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: nice-view-battery                  # new entry
+      remote: infely                           # new entry
+      revision: main 
     - name: nv-gem
       url: https://github.com/MechboardsLTD/zmk-module
       revision: nv_gem
